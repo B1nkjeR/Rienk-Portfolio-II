@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <!-- This wil scale the fontsize so high res mobile users won´t have to squint -->
+  <title>Mijn Curriculum Vitae</title>
+
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <script TYPE="text/javascript" LANGUAGE="JavaScript">
+  <!-- datumweergave sectie begint hier -->
+  function initArray() {
+  this.length = initArray.arguments.length;
+  for (var i = 0; i < this.length; i++)
+  this[i+1] = initArray.arguments[i];
+  }
+  var dagArray = new initArray("zondag","maandag", "dinsdag","woensdag","donderdag","vrijdag","zaterdag");
+  var maandArray = new initArray("januari","februari","maart","april","mei","juni","juli", "augustus","september","oktober","november","december");
+  var nu = new Date();
+  var dagtekst = dagArray[(nu.getDay()+1)];
+  var dag = nu.getDate();
+  var maandtekst = maandArray[(nu.getMonth()+1)];
+  var jaar = nu.getYear();
+  var jaar4 = ((jaar < 1900) ? (jaar + 1900) : (jaar));
+  var datumweergave = "Het is vandaag " + dagtekst + " " + dag + " " + maandtekst + " " + jaar4;
+  document.write(datumweergave);
+  //-->
+  </script>
+  <!-- Navigatie met links sectie begint hier -->
+  <div class="nav">
+    <ul>
+
+          <li>
+  <li class="dropdown">
+  <a href="index.html">Home</a>
+
+  <li class="dropdown">
+      <a href="JavaScript:void(0)" class="dropbtn">Over Mij</a>
+      <div class="dropdown-content">
+      <a href="file:///Users/rienkbezema/Documents/Portfolio%20Rienk/Even%20voorstellen.html">Even Voorstellen</a>
+      <a href="file:///Users/rienkbezema/Documents/Portfolio%20Rienk/Curriculum%20Vitae.html">Mijn CV</a>
+
+  <li class="dropdown">
+      <a href="JavaScript:void(0)" class="dropbtn">POP en Blog</a>
+      <div class="dropdown-content">
+        <a href="file:///Users/rienkbezema/Documents/Portfolio%20Rienk/Persoonlijk%20ontwikkelingsplan.html">Persoonlijk Ontwikkelingsplan (POP)</a>
+        <a href="file:///Users/rienkbezema/Documents/Portfolio%20Rienk/Blog%20van%20Rienk.html">Blog</a>
+
+        <li class="dropdown">
+  <a href="JavaScript:void(0)" class="dropbtn">Skills</a>
+  <div class="dropdown-content">
+  <a href="file:///Users/rienkbezema/Documents/Portfolio%20Rienk/Computervaardigheden.html">Computervaardigheden</a>
+  <a href="file:///Users/rienkbezema/Documents/Portfolio%20Rienk/Andere%20vaardigheden.html">Other Skills</a>
+
+  <li class="dropdown">
+      <a href="JavaScript:void(0)" class="dropbtn">Code Gorilla</a>
+      <div class="dropdown-content">
+      <a href="https://codegorilla.nl/" target="_blank">Code Gorilla Homepage</a>
+      <a href="http://elo.codegorilla.nl/cms/" target="_blank">Code Gorilla Electronische Leeromgeving (ELO)</a>
+      <a href="https://www.facebook.com/CodeGorillaNL" target="_blank">Code Gorilla op Facebook</a>
+      <a href="https://twitter.com/codegorillanl" target="_blank">Code Gorilla op Twitter</a>
+
+      <li class="dropdown">
+          <a href="JavaScript:void(0)" class="dropbtn">Handig</a>
+    <div class="dropdown-content">
+      <a href="https://atom.io/" target="_blank">ATOM -- A Hackable Text Editor</a>
+      <a href="https://www.w3schools.com/default.asp" target="_blank">W3Schools (Learn How To Code)</a>
+      <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+      <a href="https://wordpress.com/start/delta-site/design-type/nl" target="_blank">WordPress</a>
+      <a href="https://cloudinary.com/" target="_blank">Cloudinary -- Cloud Image Service</a>
+    	<a href="https://www.sololearn.com/" target="_blank">SoloLearn (Learn How To Code)</a>
+      <a href="http://www.tekstenuitleg.net/" target="_blank">Tekst en Uitleg Net</a>
+
+  <li class="dropdown">
+        <a href="JavaScript:void(0)" class="dropbtn">Contact</a>
+        <div class="dropdown-content">
+          <a href="https://twitter.com/RienkBezemaCGC" target="_blank">Twitter</a>
+          <a href="https://www.sololearn.com/Profile/6286011" target="_blank">SoloLearn</a>
+                  <a href="https://www.linkedin.com/in/rienk-bezema-a94b14151/" target="_blank">LinkedIn</a>
+        </div>
+          </div>
+  <!-- Navigatie met links sectie eindigt hier -->
+<!-- Mijn CV sectie begint hier -->
+<div align="left">
+<div class="nav">
+     <ul>
+   <p align="center"><strong>Mijn Curriculum Vitae</strong></p>
+   <br>
+<!-- Mijn Persoonsgegevens sectie begint hier -->
+<p align="left"><b>Persoonsgegevens:</b></p><br>
+             <p align="left">Naam:          Rienk Bezema<br>
+             Geboortedatum:                 9 maart 1968<br>
+             Geboorteplaats:                Zeist<br>
+             E-mail:                        rbezema@gmail.com<br>
+             Telefoon:                      0591-659319<br>
+             Telefoon mobiel:               06-39082762<br>
+             Adres:                         Spehornerbrink 87, 7812KD  EMMEN
+           </p>
+             <br>
+<!-- Mijn Persoonsgegevens sectie eindigt hier -->
+<!-- Mijn werkervaring sectie begint hier -->
+<p align="left"><b>Werkervaring:</b></p><br>
+<table>
+                    <tr>
+                      <th>Periode</th>
+                      <th>Bedrijf/Organisatie</th>
+                      <th>Functie</th>
+                      <th>Werkzaamheden</th>
+                   <tr>
+                    <td >November 2015 - Heden</td>
+                    <td >Sint Fransschool, Emmen</td>
+                    <td >Conciërge</td>
+                    <td >Voorkomende taken zoals kopieer- en lamineerwerk, onderhoud
+aan het schoolgebouw, voorraadbeheer, schoonmaakwerkzaamheden, toezicht
+houden in de klas en tijdens pleindienst, verzorgen van koffie, thee en limonade.
+Kinderen voorzien van brood en drinken indien zij dit niet bij zich hebben.
+Ondersteunend voor leerkrachten, ouders en kinderen.
+Project: samen met leerlingen van groep 7 en 8 heb ik een 3D-printer gebouwd.</td>
+                  </tr>
+                  <tr>
+                   <td >Augustus 2015 - September 2015</td>
+                   <td >Studieboekencentrale, Emmen</td>
+                   <td >Buffer</td>
+                   <td >Zorgen voor genoeg boekenvoorraad in de stellingen zodat orderpickers
+bestellingen in orde kunnen maken.</td>
+                 </tr>
+                 <tr>
+                  <td >Januari 2014 - Februari 2015</td>
+                  <td >Training- en Diagnosecentrum Werkplein Zuid-Oost Drenthe (TDC), Emmen</td>
+                  <td >Begeleider, trainer en controleur</td>
+                  <td >Ik begeleide/trainde mensen die verschillende modules bij het TDC volgden.
+Daarbij hielp ik deelnemers bij het schrijven van een mooi, goed en duidelijk
+curriculum vitae, een standaardsollicitatiebrief, motivatiebrieven en/of open
+sollicitatiebrieven. Daarnaast hielp ik hen bij het maken van een een zogeheten
+ePortfolio voor gebruik via internet.
+Ik controleerde deze cv's, brieven en ePortfolio op inhoud, relevantie, grammatica en spelling.</td>
+                </tr>
+                <tr>
+                 <td >Juni 2005 - Februari 2012</td>
+                 <td >VluchtelingenWerk Nederland</td>
+                 <td >Junior Coördinator Pre-vestiging en Huisvesting</td>
+                 <td >Verantwoordelijk voor het
+inloopspreekuur en Juridisch spreekuur bij VluchtelingenWerk Noord Nederland
+en de begeiding van werkgroep Emmen (ca. 20 vrijwilligers). Nevenfuncties: Juridisch Medewerker (specialisaties gezinshereniging en de
+asielprocedure), Lesgever NT2 (Nederlands als Tweede taal), Lesgever
+Maatschappelijke Oriëntatie, Trainer/begeleider bij portfolio-opdrachten van
+inburgeraars en trainer (assessments) van inburgeraars (in het kader van de Wet
+Inburgering), Voorlichter: ik gaf voorlichting en presentaties over juridische zaken,
+zoals bijvoorbeeld de Wet Inburgering en de asielprocedure, aan vrijwilligers van
+VluchtelingenWerk Noord Nederland - werkgroep Emmen.
+Ik ben ooit begonnen als vrijwilliger voor het inloop- en juridisch spreekuur.</td>
+               </tr>
+               <tr>
+                <td >December 2005 en December 2006</td>
+                <td >Nivon, natuurvriendenhuis De Bosbeek, Bennekom</td>
+                <td >Keukenhulp (vrijwilligerswerk)</td>
+                <td >Voorkomende keukenwerkzaamheden (voornamelijk spoelkeuken) het verzorgen van maaltijden tijdens de viering van de kerstdagen van een groep ouderen. De
+groepsgrootte was ongeveer 90 mensen.</td>
+              </tr>
+              <tr>
+               <td >Juni 2000 - April 2003</td>
+               <td >Projectbureau De Wissel, Veendam</td>
+               <td >Lesgever NT2 en Maatschappelijke Oriëntatie, Medewerker Organisatie en
+Planning</td>
+               <td >Als Lesgever NT2 en MO: Vluchtelingen leren over relevante informatie en taal
+zodat zij zich in eerste instantie enigszinskunnen redden in Nederland.
+Als MOP: Verantwoordelijk was voor het samenstellen van lesgroepen, het
+verzorgen van lesmaterialen en het samenbrengen van lesgroepen met
+docenten. Tevens was ik verantwoordelijk voor de rapportage over de aan- of
+afwezigheid van leerlingen en vorderingen van leerlingen aan het COA.</td>
+             </tr>
+             <tr>
+              <td >Juli 1997 - April 2000</td>
+              <td >Slachtofferhulp Nederland, werkgroep Zuidoost Drenthe, Emmen</td>
+              <td >Stagiair, vrijwilliger</td>
+              <td >Taken: spreekuur op afspraak, telefonisch spreekuur, administratie en
+huisbezoeken.
+In het kader van de opleiding MBO Sociale Dienstverlening ben ik eerst als
+stagiair aan de slag gegaan bij Slachtofferhulp Zuidoost Drenthe en daarna nog
+als vrijwilliger.</td>
+              <tr>
+               <td >April 1991 - Juli 1997</td>
+               <td >Diverse banen via uitzendbureaus</td>
+               <td >Uitzendkracht</td>
+               <td >Onder andere werkzaam bij een varkensslachterij en een bedrijf in de groenvoorziening. Werkzaamheden:
+Het ophangen van zijden spek voor verder transport. Beplanting van grondgebied. Maai- en snoeiwerk.
+</td>
+             </tr>
+             <tr>
+              <td >September 1987 - April 1991</td>
+              <td >Hollandse Eenheidsprijzen Maatschappij Amsterdam (HEMA), vestiging Emmen</td>
+              <td >Magazijnmedewerker</td>
+              <td >Alle voorkomende magazijnwerkzaamheden.
+Zorgen dat het personeel in de winkel de door hun aangevraagde artikelen krijgt.
+Magazijn en ook buiten het HEMA-filiaal schoonmaken.
+Inventariseren.</td>
+            </tr>
+            </table>
+          </p>
+          <br>
+<!-- Mijn werkervaring sectie eindigt hier -->
+<!-- Mijn Opleidingen sectie begint hier -->
+<p align="left"><b>Opleidingen:</b></p><br>
+<table>
+               <tr>
+                 <th>Opleiding</th>
+                   <th>School/Opleiding</th>
+                   <th>Gediplomeerd</th>
+
+                  <tr>
+                      <td>MBO-SD - Middelbare Beroepsopleiding Sociaal Dienstverlener, niveau 4</td>
+                        <td >Hogeschool Haarlem SOSA, Emmen</td>
+                        <td >8 juli 1999</td>
+                  </tr>
+
+                  <tr>
+                      <td>Hoger Algemeen Voortgezet Onderwijs (Havo)</td>
+                        <td >Openbare Scholengemeenschap 'De Dissel', Emmen</td>
+                        <td >30 juni 1987</td>
+                 </tr>
+
+                 <tr>
+                    <td>Voorbereidend Voortgezet Onderwijs</td>
+                      <td >De Leon van Gelder Middenschool, Groningen</td>
+                      <td >22 juni 1984</td>
+                </tr>
+              </table>
+              <br>
+<!-- Mijn Opleidingen sectie eindigt hier -->
+<!-- Mijn Hobby's sectie begint hier -->
+<p align="left"><b>Hobby's:</b></p><br>
+Films kijken<br>
+Muziek luisteren<br>
+Boeken lezen<br>
+Computeren<br>
+Kokkerellen<br>
+<br>
+<!-- Mijn Hobby's sectie eindigt hier -->
+<!-- Mijn Taalvaardigheden sectie begint hier -->
+<p align="left"><b>Taalvaardigheden:</b></p><br>
+Nederlands<br>
+Mondeling: Goed<br>
+Schriftelijk: Goed<br><br>
+Engels<br>
+Mondeling: Redelijk<br>
+Schriftelijk: Redelijk<br><br>
+</div>
+</ul>
+<!-- Mijn Taalvaardigheden sectie eindigt hier -->
+<!-- Mijn CV sectie eindigt hier -->
+
+
+
+
+
+<script type="text/JavaScript" LANGUAGE="JavaScript">
+</script>
+</body>
+</html>
