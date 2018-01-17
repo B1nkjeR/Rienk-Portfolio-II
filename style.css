@@ -1,158 +1,194 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+  margin: 0;
+  padding: 0;
+}
 
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 html {
   margin: 0;
-  padding: 5px;
+  padding: 3px;
   width: 100%;
   height: auto;
   overflow: auto;
+  font-family: 'Raleway', sans-serif;
 }
+
 body {
-    margin: 0;
-    padding: 5px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 11pt;
-    color: #e6e6e6;
-    background-color: #333;
-    font-weight: normal;
-    width: auto;
-    height: 100%;
-    text-align: left;
+  margin: 0;
+  padding: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 11pt;
+  color: #e6e6e6;
+  background-color: #333;
+  font-weight: normal;
+  width: auto;
+  height: 100%;
+  text-align: left;
 }
+
 #datumweergave {
   padding: 20px 0 0 20px;
   color: #e6e6e6;
   font-weight: bolder;
+  font-family: 'Raleway', sans-serif;
 }
+
 a {
   color: #e6e6e6;
   text-decoration: none;
+  font-family: 'Raleway', sans-serif;
 }
+
 a:hover {
   color: #CC7A00;
 }
-.nav {
-background-color: #333;
-color: #e6e6e6;
-list-style: none;
-text-align: center;
-padding: 10px 10px 10px 10px;
-}
-.nav > li {
-float: none;
-display: inline-block;
-padding-right: 10px;
 
+.nav {
+  background-color: #333;
+  color: #e6e6e6;
+  list-style: none;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  font-family: 'Raleway', sans-serif;
 }
-.nav > li a {
-text-decoration: none;
-color: #CCA700;
-font-size: 14px;
-text-align: center;
+
+.nav>li {
+  float: none;
+  display: inline-block;
+  padding-right: 10px;
+  font-family: 'Raleway', sans-serif;
 }
-.nav > li a:hover {
+
+.nav>li a {
+  text-decoration: none;
+  color: #CCA700;
+  font-size: 14px;
+  text-align: center;
+}
+
+.nav>li a:hover {
   color: #333;
 }
+
 .logo {
   color: #CC7A00;
-text-align: left;
-float: left;
-padding-left: 10px;
-font-size: 26px;
-font-weight: bold;
+  text-align: left;
+  float: left;
+  padding-left: 10px;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
 }
-.logo > a {
+
+.logo>a {
   float: left;
   text-decoration: none;
   color: #CC7A00;
+  font-family: 'Raleway', sans-serif;
 }
-.logo > a:hover {
+
+.logo>a:hover {
   color: #FFFFFF;
 }
+
 .banner {
-width: 100%;
-display: block;
+  width: 100%;
+  display: block;
+  font-family: 'Raleway', sans-serif;
 }
-.banner > .banner-image {
-width: 100%;
-display: block;
+
+.banner>.banner-image {
+  width: 100%;
+  display: block;
 }
 
 li a, .dropbtn {
-    display: block;
-    color: #CC7A00;
-    font-size: 12px;
-    text-align: left;
+  display: block;
+  color: #CC7A00;
+  font-size: 12px;
+  text-align: left;
+  background-color: inherit;
+  text-decoration: none;
+}
 
-    background-color: inherit;
-    text-decoration: none;
-}
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: #CC7A00;
-    color: #FFFFFF;
+  background-color: #CC7A00;
+  color: #FFFFFF;
 }
+
 li.dropdown {
-    display: inline-block;
-    color: #CC7A00;
-    }
-.dropdown-content {
-    display: none;
-    font-size: 14px;
-    position: absolute;
-    background-color: #333;
-    width: 140px;
+  display: inline-block;
+  color: #CC7A00;
 }
+
+.dropdown-content {
+  display: none;
+  font-size: 14px;
+  position: absolute;
+  background-color: #333;
+  width: 140px;
+}
+
 .dropdown-content a {
-    text-decoration: none;
-    font-size: 12px;
-    display: inline-block;
-    text-align: center;
-        }
+  text-decoration: none;
+  font-size: 12px;
+  display: inline-block;
+  text-align: center;
+}
+
 .dropdown-content a:hover {
   position: relative;
   border-style: solid;
   background-color: #CC7A00;
   display: block;
 }
+
 .dropdown:hover .dropdown-content {
-    display: inline-block;
-    width: 140px;
+  display: inline-block;
+  width: 140px;
 }
+
 .table {
-    width: 100%;
-    font-size: 10pt;
-    color: #939393;
-    background-color: #333;
+  width: 100%;
+  font-size: 10pt;
+  color: #939393;
+  background-color: #333;
+  font-family: 'Raleway', sans-serif;
 }
+
 table, th, td {
   border: 2px solid #939393;
   border-collapse: collapse;
-    text-align: left;
-    table-layout: inherit;
+  text-align: left;
+  table-layout: inherit;
 }
 
 .blockquote {
   background: #333;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
-
+  font-family: 'Raleway', sans-serif;
 }
+
 .blockquote:before {
   color: #CC7A00;
   content: open-quote;
-  font-size: 4em;
+  font-size: 3em;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
+
 .blockquote::after {
   color: #CC7A00;
   content: close-quote;
-  font-size: 4em;
+  font-size: 3em;
   line-height: 0.1em;
   margin-left: 0.25em;
   vertical-align: -0.4em;
 }
+
 .blockquote p {
   display: inline;
+  font-family: 'Raleway', sans-serif;
 }
